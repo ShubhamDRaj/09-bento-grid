@@ -1,0 +1,143 @@
+:root {
+    --clr-purple-100: hsl(254, 88%, 90%);
+    --clr-purple-500: hsl(256, 67%, 59%);
+    --clr-peach-100-hsl: 31, 66%, 93%;
+    /* --clr-peach-100: hsl(--clr-peach-100-hsl); */
+    --clr-yellow-500: hsl(39, 100%, 71%);
+    --clr-white-hsl: 0, 0%, 100%;
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black-hsl: 0, 0%, 7%;
+    --clr-black: hsl(0, 0%, 7%);
+
+    --fs-18: 1.125rem;
+
+    --fw-400: 400;
+    --fw-500: 500;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    font-weight: var(--fw-500);
+}
+
+
+
+
+/* Utitlities */
+.bento-card {
+    border-radius: 0.5rem;
+}
+
+.grid-flow {
+    display: grid;
+    place-items: center;
+    gap: 1.5rem;
+}
+
+.bg-purple-500 {
+    
+    /* temporal */
+    
+}
+
+.bg-white {
+    
+}
+
+.bg-yellow-500 {
+    background-color: var(--clr-yellow-500);
+}
+
+.bg-purple-100 {
+    background-color: var(--clr-purple-100);
+}
+
+.text-white {
+    
+}
+
+.text-yellow {
+    color: var(--clr-yellow-500)
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+
+body {
+    font-family: 'DM Sans';
+    font-weight: var(--fw-400);
+    font-size: var(--fs-18);
+    color: var(--clr-black);
+    background: hsl(var(--clr-peach-100-hsl), 0.25);
+}
+
+.bento-grid {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.card-10x {
+    color: var(--clr-white);
+    background-color: var(--clr-purple-500);
+    padding: 40px;
+}
+
+.card-10x h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.card-10x img {
+    width: 200px;
+    height: auto;
+}
+
+.card-10x p {
+    opacity: 0.85;
+}
+
+
+.card-accounts {
+    background: var(--clr-white);
+}
+
+
+
+
+@media (min-width: 37.5em) {
+    body {
+        min-height: 100vh;
+
+    }
+}
